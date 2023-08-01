@@ -1,0 +1,25 @@
+.buttons-section {
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: white;
+  color: black;
+  font-weight: 700;
+  padding: 5px 15px;
+}
+
+.buttons {
+  margin-left: 20px;
+  box-shadow: 0px 4px 10px 1px #0b0b0b40;
+  border-radius: 10px;
+  background-color: pink;
+  font-weight: 700;
+  padding: 10px 15px;
+  border: 1px solid #b1b1b1;
+}
+.buttons:hover,
+.buttons:active {
+  background-color: aquamarine;
+  cursor: pointer;
+}
