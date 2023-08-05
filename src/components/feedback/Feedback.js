@@ -1,15 +1,29 @@
 import './Feedback.css';
 
-const Feedback = ({ addFeedback }) => {
+const Feedback = ({
+  goodFb,
+  neutralFb,
+  badFb,
+  setBad,
+  setGood,
+  setNeutral,
+}) => {
   const data = [
     { id: 1, value: 'good', text: 'Good' },
     { id: 2, value: 'neutral', text: 'Neutral' },
     { id: 3, value: 'bad', text: 'Bad' },
   ];
-
   const handleClick = e => {
     const value = e.target.value;
-    addFeedback(value);
+    if (value === 'good') {
+      setGood(goodFb + 1);
+    }
+    if (value === 'neutral') {
+      setNeutral(neutralFb + 1);
+    }
+    if (value === 'bad') {
+      setBad(badFb + 1);
+    }
   };
   return (
     <div className="buttons-section">
